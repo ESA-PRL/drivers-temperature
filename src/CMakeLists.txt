@@ -1,7 +1,9 @@
 rock_library(temperature
-    SOURCES Dummy.cpp
-    HEADERS Dummy.hpp)
+    SOURCES Temperature.cpp
+    HEADERS Temperature.hpp
+	DEPS_PKGCONFIG iodrivers_base)
 
-rock_executable(temperature_bin Main.cpp
-    DEPS temperature)
+rock_executable(temperature_bin main.cpp
+    DEPS temperature
+    DEPS_PKGCONFIG iodrivers_base)
 

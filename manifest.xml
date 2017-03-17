@@ -1,17 +1,11 @@
 <package>
-  <description brief="">
-  
+  <description brief="Temperature sensor driver">
+  Driver to read temperature sensors
   </description>
-  <author>/</author>
+  <author>Karl Kangur/karl.kangur@esa.int</author>
   <license></license>
-  <url>http://</url>
+  <url>https://github.com/hdpr-rover/drivers-temperature</url>
   <logo>http://</logo>
   <depend package="base/cmake" />
-  <!--
-   To add any dependencies use the depend tag
-  <depend package="dummy-dependency-0" />
-	...
-  <depend package="dummy-dependency-n-1" />
-  <depend package="dummy-dependency-n" />
-  -->
+  <depend package="drivers/iodrivers_base" />
 </package>
