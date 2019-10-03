@@ -66,9 +66,9 @@ bool Temperature::update(float * temp)
         
         return true;
     }
-    catch(int timeout_error)
+    catch(iodrivers_base::TimeoutError& e)
     {
-        cout << "TemperatureDriver: Timeout error" << endl;
+        cerr << "Temperature - TimeoutError - " << e.what() << endl;
         return false;
     }
 }
